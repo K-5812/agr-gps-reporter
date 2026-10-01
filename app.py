@@ -45,7 +45,7 @@ def load_excel(file):
       "Name":find_col(df.columns,["NAME","NOMBRE","JUGADOR"]),
       "PUESTO":find_col(df.columns,["PUESTO","POSICION"]),
       "MIN":find_col(df.columns,["TIEMPO TOTAL","MINUTOS","MIN"]),
-      "DISTANCIA":find_col(df.columns,["TOTAL DISTANCE","DISTANCIA TOTAL","DISTANCE"]),
+      "DISTANCIA":find_col(df.columns,["TOTAL DISTANCE","TOTAL DISTANCE (M)","TOTAL DIST.","TOTAL DIST","DISTANCIA TOTAL","DISTANCIA TOTAL (M)","DISTANCIA","DISTANCE","DISTANCE TOTAL","DIST. TOTAL","DIST TOTAL","TD"]),
       "HML":find_col(df.columns,["HML DISTANCE","HML"]),
       "ACC":find_col(df.columns,["ACCELERATIONS","ACELERACIONES","ACC"]),
       "RHIE":find_col(df.columns,["RHIE"]),
