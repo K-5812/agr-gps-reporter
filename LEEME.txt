@@ -1,0 +1,43 @@
+AGR GPS REPORTER - Alta Gracia Rugby
+
+USO
+1. Instalar Python 3.11 o superior en Windows.
+2. Hacer doble clic en INSTALAR.bat una sola vez.
+3. Luego abrir AGR_GPS_REPORTER.bat.
+4. Elegir:
+   - CARGAR EXCEL - PARTIDO COMPLETO
+   - CARGAR 1T + 2T
+5. Seleccionar el Excel y guardar el PDF.
+
+LOGICA DEL REPORTE
+- Objetivos por puesto.
+- Distancia, HML, Aceleraciones y RHIE ajustados a minutos reales.
+- En partido completo, el objetivo de volumen se limita a 80 min.
+- En cada tiempo, el objetivo se limita a 40 min.
+- Velocidad Maxima no se ajusta por minutos.
+- Intensidad relativa:
+    HML/min 35%
+    Aceleraciones/min 30%
+    RHIE/min 25%
+    Distancia/min 10%
+- Rendimiento Global AGR:
+    Distancia 20%
+    HML 25%
+    Aceleraciones 20%
+    RHIE 20%
+    Velocidad Maxima 15%
+- DLS no se utiliza.
+
+COLUMNAS QUE RECONOCE
+NAME / NOMBRE / JUGADOR
+PUESTO / POSICION
+TIEMPO TOTAL / MINUTOS / MIN
+TOTAL DISTANCE / DISTANCIA TOTAL
+HML DISTANCE / HML
+ACCELERATIONS / ACELERACIONES / ACC
+RHIE
+VELOC. MAX / VELOCIDAD MAX / VEL.MAX / MAX SPEED
+
+NOTA
+Si un jugador tiene pocos minutos, el informe no lo penaliza por volumen bruto:
+compara su produccion por minuto y los objetivos de volumen se ajustan al tiempo jugado.
